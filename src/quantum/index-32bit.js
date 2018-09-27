@@ -8,7 +8,7 @@ import Widget from './widget';
 import Perfherder from './perfherder';
 import Benchmark from './benchmark';
 import Countdown from './countdown';
-import TelemetryContainer from '../telemetry/graph';
+import TelemetryContainer from '../containers/TelemetryContainer';
 import SETTINGS from '../settings';
 import { quantum32QueryParams, flowGraphProps, getBugUrl, statusLabels } from './constants';
 import GraphContainer from '../components/graph-container';

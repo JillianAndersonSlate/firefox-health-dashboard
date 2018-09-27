@@ -6,6 +6,8 @@ import Section from '../../components/Section';
 import NimbledroidSitesTable from '../../containers/NimbledroidSummaryTable';
 import NimbledroidSiteDrilldown from '../../containers/NimbledroidSiteDrilldown';
 import PerfherderGraphContainer from '../../containers/PerfherderGraphContainer';
+import TelemetryContainer from '../../containers/TelemetryContainer';
+import { quantum64QueryParams } from '../../quantum/constants';
 
 class Android extends Component {
   static propTypes = {
@@ -45,6 +47,14 @@ class Android extends Component {
             />
           </Section>
         )}
+        <Section title='Telemetry'>
+          <TelemetryContainer
+            key="winOpen"
+            id="winOpen"
+            title="Window open"
+            queryParams={quantum64QueryParams}
+          />
+        </Section>
         <Section title='Speedometer'>
           <PerfherderGraphContainer
             series={[
